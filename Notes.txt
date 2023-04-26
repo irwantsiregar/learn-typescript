@@ -1,0 +1,22 @@
+# 0 - Intro Bicara TypeScript
+References :
+https://insights.stackoverflow.com/survey/2019/#most-popular-technologies
+https://2019.stateofjs.com/
+https://earlbarr.com/publications/typestudy.pdf
+
+Kenapa harus memilih TypeScript?
+- Trends : Berdasarkan survey
+- Code Quality / Kualitas Kode : Meningkatkan code readability/kemudahan untuk membaca codebase, khususnya oleh rekan tim atau developer lainnya.
+- Mengurangi bugs: Dapat meminimalisir terjadinya bugs. Berdasarkan penelitian TypeScript dapat mendeteksi bugs sebanyak 15%. Angka yang cukup besar bagi developer untuk dapat mendeteksi bugs sejak dini (deveplopment process).
+- Scalable : Kemudahan bagi developer untuk dapat melakukan Refactor code/ perubahan requirement/ penambahan feature.
+
+Agenda:
+ -JavaScript Type
+ -TypeScript Type
+ -Array & Tuples
+ -Object
+ -Function
+ -Classes
+ -Interface VS Type
+ -Advanced Type
+
