@@ -20,3 +20,18 @@ Agenda:
  -Interface VS Type
  -Advanced Type
 
+# 1 - JavaScript VS TypeScript Type
+Semua type data dari JavaScript juga ada di TypeScript, karena TypeScript merupakan superset dari JavaScript.
+
+ 
+|     | Javascript | Category Types  |
+| --- | ---------- | --------- |
+| 1   | undefined  | primitive   |
+| 2   | boolean    | primitive    |
+| 3   | number     | primitive    |
+| 4   | string     | primitive   |
+| 5   | bigint     | primitive  |
+| 6   | symbol     | primitive    |
+| 7   | null       | non-primitive   |
+| 8   | object     | non-primitive  |
+| 9   | function   | non-primitive   |
