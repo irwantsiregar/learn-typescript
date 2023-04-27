@@ -58,7 +58,7 @@ keyboard = {
     },
 };
 let fullName = {
-    firstName: 'Sastra',
-    lastName: 'Nababan',
+    firstName: 'Irwanto',
+    lastName: 'Siregar',
 };
 let { firstName, lastName } = fullName;

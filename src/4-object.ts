@@ -150,8 +150,8 @@ keyboard = {
  * 5. Object Destructuring
  */
 let fullName = {
-    firstName: 'Sastra',
-    lastName: 'Nababan',
+    firstName: 'Irwanto',
+    lastName: 'Siregar',
 };
 // type inference
 // let { firstName, lastName } = fullName;

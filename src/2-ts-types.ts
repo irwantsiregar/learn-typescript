@@ -59,13 +59,13 @@ z = [1, 2, 3];
 // #With dynamic type comes great responsiblity
 // type Number utk me-return value OR Void jika tidak ingin me-return value.
 function sum(a: number, b: number): number {
-    // Validasi (required) (avoid/menghindari bugs)
+    // Validasi (required) and (menghindari/avoid bugs)
     return a + b;
 }
 // let result = sum(2, "4"); // 24
 let result = sum(2, 5);
 console.log(result); // Nan (Not a Number)
-// Type data dinamis itu fleksibel tetapi membutuhkan responsibilitas lebih dari Developer.
+// Type data dinamis itu cukup fleksibel (in JavaScript) tetapi membutuhkan responsibilitas lebih dari Developer.
 
 //  Union
 let multi: string | number; // Hanya bisa menerima value dari salah satu tipe yang didefenisikan
