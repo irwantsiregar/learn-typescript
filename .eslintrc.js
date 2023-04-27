@@ -12,10 +12,11 @@ module.exports = {
     rules: {
         // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
         // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+        'prefer-const': 'off',
     },
     env: {
         es6: true,
         browser: true,
-        node: true
+        node: true,
     },
 };
