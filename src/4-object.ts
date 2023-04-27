@@ -20,65 +20,141 @@ export {};
     note: ""
   }
 */
+// type inference
+let product = {
+    id: 'ID-1',
+    productName: 'Macbook Air',
+    price: 2000,
+    note: '',
+};
+
+// inline interface
+let product1: {
+    id: string;
+    productName: string;
+    price: number;
+    note: string;
+};
+
+product1 = {
+    id: 'ID-1',
+    productName: 'Macbook Air',
+    price: 2000,
+    note: '',
+};
+
+// interface. Best practice, more dinamis
+interface Product {
+    id: string;
+    productName: string;
+    price: number;
+    note: string;
+}
+
+let product2: Product;
+let product3: Product;
 
 /**
  * 2. Nested Object
+ * Untuk menggunakan interface secara berulang
  */
-/*
-  
+interface Item {
+    id: string;
+    productName: string;
+    price: number;
+    productDetail: ItemDetail; // using interface ItemDetail
+}
+
+interface ItemDetail {
+    year: number;
+    storage: number;
+}
+
+let product4: Item;
+product4 = {
+    id: 'ID-1',
+    productName: 'Macbook Air',
+    price: 2000,
+    productDetail: {
+        year: 2019,
+        storage: 256,
+    },
+};
 
 /**
  * 3. Nested, Array of Object
  */
+interface Address {
+    street: string;
+    city: string;
+}
 
-/*
-    {
-      id: "U-1",
-      name: "Adi dodi",
-      address: [
+interface User {
+    id: string;
+    name: string;
+    address: Array<Address>;
+}
+
+let user: User;
+user = {
+    id: 'U-1',
+    name: 'Adi dodi',
+    address: [
         {
-          street : "Jln. Setapak No.2",
-          city: "Jakarta"
+            street: 'Jln. Setapak No.2',
+            city: 'Jakarta',
         },
         {
-          street: "Jln. Lebar sekali no 10",
-          city: "Medan"
-        }
-      ]
-    }
-*/
+            street: 'Jln. Lebar sekali no 10',
+            city: 'Medan',
+        },
+    ],
+};
 
 /**
  * 4. Nested, Object of Object
  */
+interface CartItem {
+    id: string;
+    name: string;
+    qty: number;
+}
 
-/*
-    {
-      idCart: "C1",
-      dateOrdered: "2020-05-20",
-      items: {
-        p1 :{
-          "id": "P-1",
-          "name": "Mechanical Keyboard",
-          "qty": 2
+interface Cart {
+    idCart: string;
+    dateOrdered: Date;
+    items: {
+        [key: string]: CartItem; // using dinamis key properties
+    };
+}
+
+let keyboard: Cart;
+keyboard = {
+    idCart: 'C1',
+    dateOrdered: new Date('2020-05-20'),
+    items: {
+        p1: {
+            id: 'P-1',
+            name: 'Mechanical Keyboard',
+            qty: 2,
         },
-        p2 :{
-          "id": "P-2",
-          "name": "USB Hub",
-          "qty": 1
+        p2: {
+            id: 'P-2',
+            name: 'USB Hub',
+            qty: 1,
         },
-      }
-    }
-*/
+    },
+};
 
 /**
  * 5. Object Destructuring
  */
+let fullName = {
+    firstName: 'Sastra',
+    lastName: 'Nababan',
+};
+// type inference
+// let { firstName, lastName } = fullName;
 
-/*
-  let fullName = {
-    firstName : "Sastra",
-    lastName : "Nababan"
-  }
-  let {firstName, lastName} = fullName
-*/
+// inline interface
+let { firstName, lastName }: { firstName: string; lastName: string } = fullName;
