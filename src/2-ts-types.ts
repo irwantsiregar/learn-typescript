@@ -73,7 +73,7 @@ multi = 'hello';
 multi = 123;
 // multi = true;
 
-// type Aliases
+// type Aliases (tipe ALIAS)
 type CustomType = string | number; // Hanya bisa menerima value dari salah satu tipe yang didefenisikan. Biasanya sering digunakan pada Function dan Class
 let myType: CustomType;
 myType = 'hello';
